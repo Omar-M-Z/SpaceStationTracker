@@ -15,9 +15,10 @@ def iss_coords(number_only = False):
             latitude = f"{latitude}º North"
 
         if longitude[0] == "-":
-            longitude = f"{longitude[1:]}º South"
+            longitude = f"{longitude[1:]}º West"
         else:
-            longitude = f"{longitude}º North"
+            longitude = f"{longitude}º East"
+        return latitude, longitude
     return float(latitude), float(longitude)
 
 #returns ground distance from current location to ISS in kilometers
