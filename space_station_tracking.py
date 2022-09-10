@@ -29,13 +29,7 @@ def dist_to_iss():
 
     dist_to_iss = geopy.distance.distance(user_loc, iss_loc).km
 
-    return round(dist_to_iss, 2)
+    return round(dist_to_iss, 3)
 
-
-#returns the local time at which the ISS will pass over the current location
-def iss_pass_time():
-    pass
-
-#returns the time until the ISS passes over the the current location
-def time_until_iss_pass():
+def iss_map(width, height):
     pass
